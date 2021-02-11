@@ -1,0 +1,70 @@
+.header{
+  min-height: 655px;
+  background: url("../assets/mainBG.svg") no-repeat ;
+  background-size:cover;
+  background-position:center -20px;
+  *{    
+    font-family: 'Montserrat', sans-serif;
+  }
+  .header_aligner{
+    display: flex;
+    justify-content: space-between;
+    @include _768{
+      display: block;
+    }
+  }
+  .header__info{
+    margin-top: 48px;
+    color: #fff;
+    h1{
+      font-size: 48px;
+      font-weight: 400;
+      max-width: 586px;
+      @include _480{
+        font-size: 34px;
+      }
+      span{
+        font-weight: 700;
+      }
+    }
+    p{
+      margin-top: 24px;
+      max-width: 580px;
+      font-size: 20px;
+      line-height: 142%;
+    }
+    button{
+      margin-top: 32px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    @include _768{
+      padding: 30px;
+    }
+    
+  }
+  .header__product{
+    img {
+      width: 100%;
+      height: 100%;
+      @include _768{
+        width: 50%;
+        height: 50%;
+      }
+    }
+    @include _768{
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.header_light{
+  min-height: 9vh;
+  background: #3A80BA;
+  .logo{
+    padding-top: 10px;
+  }
+}

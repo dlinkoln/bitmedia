@@ -1,0 +1,69 @@
+
+@import 'mixins';
+@import 'header';
+.services{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 15px;
+  .services__title{
+    display: block;
+    margin: 0 auto;
+    max-width: 530px;
+    line-height: 39px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: #1A1A1A;
+    span{
+      font-weight: bold;
+    }
+  }
+  .services__benefits{
+    display: block;
+    margin: 24px auto 40px;
+    max-width: 780px;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #7E7E7E;
+  }
+  .services__cards{
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+    @include _1200{
+      justify-content: center;
+    }
+    .AppCo__card{
+      max-width:375px;
+      min-height: 323px;
+      margin: 9px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .AppCo__card-title,.AppCo__card-descr{
+      text-align: center;
+    }
+    .AppCo__card-title{
+      font-size: 24px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #1A1A1A;
+      margin-top: 40px;
+    }
+    .AppCo__card-descr{
+      font-size: 16px;
+      line-height: 142%;
+      margin-top: 16px;
+      text-align: center;
+      color: #7E7E7E;
+      max-width: 300px;
+    }
+  }
+}
+@import 'footer';

@@ -1,0 +1,47 @@
+@import './_fonts.scss';
+@import './_var.scss';
+@import './mixins';
+*{
+  box-sizing: border-box;
+}
+body {
+  background: #FBFBFB;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.logo{
+  font-size:40px;
+  padding-top: 24px;
+  color: #fff;
+  @include _768{
+    padding-left: 30px;
+  }
+}
+.appCo__btn{
+  width: 154px;
+  height: 56px;
+  border-radius: 8px;
+  outline:none;
+  border:none;
+}
+.appCo__btn_white{
+  background: #FFFFFF;
+  color: $blue;
+}
+.appCo__btn_blue{
+  background: $blue;
+  color: #fff;
+}
+.AppCo__card{
+  background: #FFFFFF;
+  width: 100%;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 32px;
+}
+@import './Home.scss';
+@import './Users.scss';
